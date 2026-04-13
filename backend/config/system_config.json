@@ -1,0 +1,30 @@
+{
+  "database": {
+    "uri": "sqlite:///ibdds_ephr.db",
+    "path": "ibdds_ephr.db"
+  },
+  "jwt": {
+    "secret_key": "ibdds-ephr-super-secret-key-change-in-production-2024",
+    "algorithm": "HS256",
+    "expiration_hours": 24
+  },
+  "ibe": {
+    "prime": 2147483647,
+    "generator": 5,
+    "hash_function": "sha256"
+  },
+  "threshold": {
+    "n": 5,
+    "k": 3
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "json",
+    "file": "logs/ibdds.log"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "debug": true
+  }
+}

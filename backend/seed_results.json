@@ -1,0 +1,77 @@
+{
+  "total_patients": 100,
+  "total_doctors": 40,
+  "total_records": 100,
+  "total_grants": 400,
+  "total_errors": 0,
+  "sample_patients": [
+    {
+      "id": "99bfdc89-614c-4c88-87df-eeac349360bc",
+      "email": "aarav.patel1@patient.hospital.com",
+      "password": "patient001",
+      "name": "Aarav Patel"
+    },
+    {
+      "id": "b6efd897-5099-4ae3-a80c-965154ac7a63",
+      "email": "aditi.sharma2@patient.hospital.com",
+      "password": "patient002",
+      "name": "Aditi Sharma"
+    },
+    {
+      "id": "ed93f378-fce3-4e06-8afa-93bbe45d375c",
+      "email": "aisha.johnson3@patient.hospital.com",
+      "password": "patient003",
+      "name": "Aisha Johnson"
+    },
+    {
+      "id": "508d37f4-267e-4760-bd0a-ba14c633d107",
+      "email": "akash.williams4@patient.hospital.com",
+      "password": "patient004",
+      "name": "Akash Williams"
+    },
+    {
+      "id": "b275330a-2da2-439d-bb73-6dec5324a09f",
+      "email": "amara.brown5@patient.hospital.com",
+      "password": "patient005",
+      "name": "Amara Brown"
+    }
+  ],
+  "sample_doctors": [
+    {
+      "id": "66527fdb-a04f-45a4-ae46-a5b16ef06662",
+      "email": "dr.aiden.lee@cityhospital.com",
+      "password": "doctor001",
+      "name": "Dr. Aiden Lee",
+      "specialty": "General Practice"
+    },
+    {
+      "id": "9898c27b-c5a1-4e33-a52f-95b3773996bd",
+      "email": "dr.brooke.walker@metrohealth.org",
+      "password": "doctor002",
+      "name": "Dr. Brooke Walker",
+      "specialty": "Internal Medicine"
+    },
+    {
+      "id": "b524606f-4ddd-41bb-84f9-6c84acbe57fa",
+      "email": "dr.caleb.hall@regionalmed.com",
+      "password": "doctor003",
+      "name": "Dr. Caleb Hall",
+      "specialty": "Cardiology"
+    },
+    {
+      "id": "e565032b-9876-44df-bc4c-08163bcd7896",
+      "email": "dr.diana.allen@university-medical.edu",
+      "password": "doctor004",
+      "name": "Dr. Diana Allen",
+      "specialty": "Endocrinology"
+    },
+    {
+      "id": "a387bdae-2fb2-433a-81cc-9129ed60f9e5",
+      "email": "dr.eric.young@communityhealth.org",
+      "password": "doctor005",
+      "name": "Dr. Eric Young",
+      "specialty": "Neurology"
+    }
+  ],
+  "errors": []
+}

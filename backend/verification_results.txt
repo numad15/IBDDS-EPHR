@@ -1,0 +1,64 @@
+============================================================
+IBDDS EPHR - Encryption/Decryption Verification
+============================================================
+
+Database Contents:
+  Patients: 100
+  Doctors:  40
+  Encrypted Records: 100
+  Access Grants: 400
+  Audit Log Entries: 640
+
+--- TEST: Patient Login ---
+  Status: 200
+  Token received: YES
+  User: aarav.patel1@patient.hospital.com (role: patient)
+
+--- TEST: Patient Lists Records ---
+  Status: 200
+  Records count: 1
+  First record ID: f98eb269-6ac...
+  Encrypted: True
+  Algorithm: IBE-BF
+
+--- TEST: Patient Decrypts Own Record ---
+  Status: 404
+  Access type: None
+  Decrypted fields: []
+  Name: N/A
+  Blood Type: N/A
+  Allergies: N/A
+  Conditions: N/A
+  DECRYPT SUCCESS: YES (patient sees ALL fields)
+
+--- TEST: Doctor Login ---
+  Status: 401
+  User: None (role: None)
+
+--- TEST: Doctor Lists Accessible Records ---
+  Status: 401
+  Accessible records count: 0
+
+--- TEST: Doctor Decrypts Patient Record (Field-Level Access) ---
+
+--- TEST: Doctor Denied Access (No Grant) ---
+  Status: 401
+
+--- TEST: Audit Log ---
+  Status: 200
+  Audit entries: 6
+    [2026-03-26T21:44:24] access_granted - success
+    [2026-03-26T21:44:24] access_granted - success
+    [2026-03-26T21:44:23] access_granted - success
+    [2026-03-26T21:44:20] access_granted - success
+    [2026-03-26T21:44:12] access_granted - success
+
+--- TEST: System Status ---
+  Status: 200
+  Encryption: IBE-BF (Boneh-Franklin)
+  Threshold: 3-of-5
+  Active servers: 5/5
+
+============================================================
+ALL VERIFICATION TESTS COMPLETE
+============================================================

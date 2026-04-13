@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\Users\numad\OneDrive\Desktop\major project1\backend\seed_data.py", line 338, in <module>
+    seed_massive_database()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\numad\OneDrive\Desktop\major project1\backend\seed_data.py", line 135, in seed_massive_database
+    app = create_app()
+  File "C:\Users\numad\OneDrive\Desktop\major project1\backend\src\api\server.py", line 55, in create_app
+    ephr_system = EPHRSystem(db_path=db_path, k=k, n=n)
+  File "C:\Users\numad\OneDrive\Desktop\major project1\backend\src\core\ephr_system.py", line 56, in __init__
+    'q': self.params.q,
+         ^^^^^^^^^^^^^
+AttributeError: 'IBEParams' object has no attribute 'q'
