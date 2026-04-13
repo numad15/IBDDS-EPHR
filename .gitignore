@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Project-specific sensitive/runtime files
+backend/credentials.txt
+backend/master_key.json
+backend/ibdds_ephr.db
+backend/test_output.txt
+backend/test_result.log
+backend/seed_error.log
+backend/seed_log.txt
+backend/seed_trace.log
+backend/seed_results.json
+backend/verify_results.txt
+backend/verify_results_utf8.txt
+backend/vr_size.txt

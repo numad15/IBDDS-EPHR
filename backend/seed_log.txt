@@ -1,5 +1,0 @@
-Creating 100 patients...
-  Created 10/100 patients
-  Created 20/100 patients
-  Created 30/100 patients
-  Created 40/100 patients
